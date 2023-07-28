@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" stylesheets="@appStyle.css" >
+    <children>
+        <Label styleClass="label-text" text="This is a object loader app" />
+        <Label styleClass="label-text" text="You write the info for an object" />
+        <Label styleClass="label-text" text="After you load this info to a txt or json file"/>
+        <Label styleClass="label-text" text="You can create only 1/100 objects"/>
+    </children>
+</VBox>

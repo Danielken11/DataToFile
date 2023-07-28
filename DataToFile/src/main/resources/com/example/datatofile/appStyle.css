@@ -1,0 +1,26 @@
+.vbox-background{
+    -fx-background-color: #060606;
+    -fx-opacity: 0.9;
+}
+.button:hover{
+    -fx-opacity: 0.5;
+    -fx-border-color: white;
+}
+.button-pressed{
+    -fx-background-color: white;
+}
+.menu-bar{
+    -fx-background-color: #060606;
+}
+.label-text{
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+}
+.list-view{
+    -fx-background-color: #141414;
+}
+#closeButton:hover{
+    -fx-background-color: red;
+    -fx-border-color: red;
+}
+

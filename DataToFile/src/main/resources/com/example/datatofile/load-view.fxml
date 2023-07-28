@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox stylesheets="@appStyle.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.datatofile.LoadController">
+   <BorderPane fx:id="loadBorder" stylesheets="@appStyle.css">
+       <top>
+           <GridPane hgap="10" prefHeight="137.6" prefWidth="563.2" style="-fx-background-color: #060606;-fx-opacity: 0.9" vgap="30">
+               <columnConstraints>
+                   <ColumnConstraints percentWidth="30.0" />
+                   <ColumnConstraints percentWidth="8.0" />
+               <ColumnConstraints />
+               <ColumnConstraints />
+               </columnConstraints>
+               <rowConstraints>
+                   <RowConstraints percentHeight="30" />
+                   <RowConstraints percentHeight="30" />
+               </rowConstraints>
+               <padding>
+                   <Insets top="20" />
+                   <Insets top="20" />
+               </padding>
+               <children>
+               <Label prefHeight="22.0" prefWidth="169.0" style="-fx-text-fill: white;-fx-font-size: 15" text="Chose or create a txt file" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+               <Button fx:id="pathSelector" onAction="#createSelectData" style="-fx-background-color: #060606;-fx-text-fill: white;" GridPane.columnIndex="1" GridPane.rowIndex="0">
+                   <graphic>
+                      <ImageView fx:id="fileImage">
+                          <image>
+                                <Image url="@Images/fileSelector.png" />
+                          </image>
+                      </ImageView>
+                   </graphic>
+               </Button>
+                   <TextField fx:id="fileName" prefHeight="26.0" prefWidth="273.0" style="-fx-background-color: #7C797D;-fx-text-fill: white" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+                        <ImageView fx:id="selected" GridPane.columnIndex="3">
+                            <image>
+                                <Image url="@Images/unselected.png" />
+                            </image>
+                        </ImageView>
+                   <Button fx:id="loadButton" prefWidth="78.0" style="-fx-background-color: #7C797D;-fx-text-fill: white" text="Load" GridPane.rowIndex="1"  />
+               </children>
+           </GridPane>
+       </top>
+       <left>
+           <ListView fx:id="loadList" style="-fx-pref-width: 200;-fx-control-inner-background: #141414;-fx-control-inner-background-alt: #141414; -fx-text-fill: white;">
+
+           </ListView>
+       </left>
+   </BorderPane>
+</VBox>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox stylesheets="@appStyle.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.datatofile.ModifyController">
+    <BorderPane fx:id="modifyBorder" stylesheets="@appStyle.css">
+        <top>
+            <GridPane hgap="25" prefHeight="103.0" prefWidth="668.0" style="-fx-background-color: #060606;-fx-opacity: 0.9" vgap="30">
+                <padding>
+                    <Insets top="25" />
+                    <Insets top="25" />
+                    <Insets left="20" />
+                    <Insets right="20" />
+                </padding>
+                <Label prefHeight="103.0" prefWidth="438.0" style="-fx-font-size: 15;-fx-text-fill: white" text="Details about objects,modify,destroy" GridPane.rowIndex="0" />
+                <Button fx:id="changeButton" style="-fx-background-color: #7C797D;-fx-text-fill: white;" text="Change" GridPane.columnIndex="1" GridPane.rowIndex="0" minWidth="75" maxWidth="75"/>
+                <Button fx:id="deleteButton" style="-fx-background-color: #7C797D; -fx-text-fill: white" text="Destroy" GridPane.columnIndex="2" GridPane.rowIndex="0" minWidth="75" maxWidth="75"/>
+            <columnConstraints>
+               <ColumnConstraints />
+               <ColumnConstraints />
+               <ColumnConstraints />
+            </columnConstraints>
+            <rowConstraints>
+               <RowConstraints />
+            </rowConstraints>
+            </GridPane>
+        </top>
+        <left>
+            <ListView fx:id="modifyList" style="-fx-pref-width: 200;-fx-control-inner-background: #141414;-fx-control-inner-background-alt: #141414; -fx-text-fill: white;">
+
+            </ListView>
+        </left>
+    </BorderPane>
+</VBox>

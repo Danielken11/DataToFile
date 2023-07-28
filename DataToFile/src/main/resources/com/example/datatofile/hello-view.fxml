@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="border" stylesheets="@appStyle.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.datatofile.Controller">
+    <top>
+        <HBox alignment="CENTER_LEFT" prefHeight="27.0" prefWidth="306.0" spacing="0.0" style="-fx-background-color: #060606">
+            <children>
+                <StackPane>
+                    <padding>
+                        <Insets left="5.0" />
+                    </padding>
+                    <children>
+                        <ImageView>
+                            <image>
+                                <Image url="@Images/objldTopIco.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </StackPane>
+                    <StackPane>
+                        <padding>
+                            <Insets left="5.0" />
+                        </padding>
+                        <children>
+                            <Label style="-fx-text-fill: gray;" text="Object Loader" />
+                        </children>
+                    </StackPane>
+                <Region HBox.hgrow="ALWAYS" />
+                <Pane prefWidth="35.0">
+                    <Button fx:id="minimizeButton" alignment="CENTER_RIGHT" prefHeight="26.0" prefWidth="17.0" style="-fx-background-color:#060606">
+                        <graphic>
+                            <ImageView>
+                                <image>
+                                    <Image url="@Images/minimizeImage.png" />
+                                </image>
+                            </ImageView>
+                        </graphic>
+                    </Button>
+                    <padding>
+                        <Insets right="0.0" />
+                    </padding>
+                </Pane>
+                <Pane prefWidth="35.0">
+                    <Button fx:id="closeButton" alignment="CENTER_RIGHT" style="-fx-background-color:#060606;">
+                        <graphic>
+                            <ImageView>
+                                <image>
+                                    <Image url="@Images/closeImage.png" />
+                                </image>
+                            </ImageView>
+                        </graphic>
+                    </Button>
+                    <padding>
+                        <Insets right="1.0" />
+                    </padding>
+                </Pane>
+            </children>
+        </HBox>
+    </top>
+    <left>
+        <VBox styleClass="vbox-background">
+            <Button fx:id="mainButton" onAction="#mainScene" prefHeight="70" prefWidth="230" style="-fx-background-color: #060606;-fx-text-fill: White;-fx-font-weight:bold">
+                <graphic>
+                    <ImageView>
+                        <image>
+                            <Image url="@Images/homeicon.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+            </Button>
+            <Button fx:id="createButton" onAction="#createObjects" prefHeight="70" prefWidth="230" style="-fx-background-color: #060606;-fx-text-fill: White;-fx-font-weight:bold" text="Create" />
+            <Button fx:id="modifyButton" onAction="#modifyData" prefHeight="70" prefWidth="230" style="-fx-background-color: #060606;-fx-text-fill: White;-fx-font-weight:bold" text="Modify" />
+            <Button fx:id="loadButton" onAction="#loadData" prefHeight="70" prefWidth="230" style="-fx-background-color: #060606;-fx-text-fill: White;-fx-font-weight:bold" text="Load" />
+        </VBox>
+    </left>
+    <center>
+        <VBox alignment="CENTER">
+            <children>
+                <Label styleClass="label-text" text="Object Loader" />
+            </children>
+        </VBox>
+    </center>
+</BorderPane>

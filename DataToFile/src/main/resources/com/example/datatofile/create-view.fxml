@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox fx:id="createView" stylesheets="@appStyle.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.2-ea" fx:controller="com.example.datatofile.CreateController">
+    <BorderPane fx:id="createBorder" stylesheets="@appStyle.css">
+        <top>
+            <GridPane vgap="30" hgap="10"  style="-fx-background-color: #060606;-fx-opacity: 0.9">
+                <columnConstraints>
+                    <ColumnConstraints percentWidth="30" />
+                    <ColumnConstraints percentWidth="30" />
+                </columnConstraints>
+                <rowConstraints>
+                    <RowConstraints percentHeight="30"/>
+                    <RowConstraints percentHeight="30"/>
+                </rowConstraints>
+                        <padding>
+                            <Insets top="20"/>
+                            <Insets top="20"/>
+                        </padding>
+                <Label GridPane.rowIndex="0" GridPane.columnIndex="0" text="How many objects?(1/100)" style="-fx-font-size: 15;-fx-text-fill:white"/>
+                    <TextField GridPane.rowIndex="0" GridPane.columnIndex="1"  prefWidth="80" prefHeight="35" style="-fx-background-color: #7C797D;-fx-text-fill: white" fx:id="fieldQuantity"/>
+                <Button GridPane.rowIndex="0" GridPane.columnIndex="2" style="-fx-background-color: #7C797D;-fx-text-fill: white;" text="Craft" fx:id="craftButton" onAction="#craftObjects"
+                prefWidth="80" prefHeight="35"/>
+            </GridPane>
+        </top>
+        <left>
+            <ListView fx:id="mylist" style="-fx-pref-width: 200;-fx-control-inner-background: #161616;-fx-control-inner-background-alt: #161616; -fx-text-fill: white;">
+
+            </ListView>
+        </left>
+    </BorderPane>
+</VBox>
